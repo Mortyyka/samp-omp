@@ -11,4 +11,4 @@ Checks for the users status.
 |                |Example                          |Returns                        |
 |----------------|-------------------------------|-----------------------------|
 |IsPlayerPaused|`IsPlayerPaused(playerid);`            |Boolean            |
-|TimeSincePaused          |`TimeSincePaused(playerid)`            |0 or time since the user is afk (in seconds)             |
+|TimeSincePaused          |`TimeSincePaused(playerid);`            |0 or time since the user is afk (in seconds)             |
