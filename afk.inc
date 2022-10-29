@@ -28,7 +28,6 @@ new AFKTime[MAX_PLAYERS];
 forward OnPlayerPause(playerid);
 forward OnPlayerUnpause(playerid);
 forward AFKChecker();
-forward TimeSincePaused(playerid);
  
 public OnPlayerUpdate(playerid)
 {
@@ -134,7 +133,7 @@ bool:IsPlayerPaused(playerid)
     else return false;
 }
  
-public TimeSincePaused(playerid) {
+stock TimeSincePaused(playerid) {
     if(PlayerAFK[playerid] == true) return gettime()-AFKTime[playerid];
     else return AFKTime[playerid];
 }
